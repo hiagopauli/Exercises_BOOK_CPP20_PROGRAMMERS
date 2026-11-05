@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int total{0};
+	int gradeCounter{1};
+	
+	while (gradeCounter <=10)
+	{
+		cout << "Enter with grade: \n";
+		int grade;
+		cin >> grade;
+		total = total + grade;
+		gradeCounter = gradeCounter + 1;
+	}
+	
+	int average{total /10};
+	
+	cout << "\nTotal of all 10 grades is \n" << total;
+	cout << "\nClass average is \n" << average << "\n";
+
+	return EXIT_SUCCESS;
+}
+
